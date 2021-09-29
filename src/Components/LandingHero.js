@@ -2,8 +2,8 @@ import React from "react";
 
 export function LandingHero() {
   return (
-    <>
-      <main id="main-content" className="container-fluid">
+    <div className="lp-hero container-fluid">
+      <div className="container">
         <div className="block-container">
           <h1>Stress Free.</h1>
           <h1>Hassle Free.</h1>
@@ -15,7 +15,7 @@ export function LandingHero() {
           <p>Apply today to start turning your dreams into reality.</p>
           <button className="btn btn-light">Apply Now</button>
         </div>
-      </main>
-    </>
+      </div>
+    </div>
   );
 }

@@ -1,18 +1,18 @@
-main#main-content {
+.lp-hero {
+  background: linear-gradient(180deg, #1589c4 0%, #0052a4 100%);
+
+  top: 0;
+  right: 0;
+  left: 0;
   padding-top: 179px;
   min-height: 80vh;
   min-width: 100vw;
   padding-bottom: 80px;
-  /* position: relative; */
-}
-
-#lp-hero.container-fluid {
-  background: linear-gradient(180deg, #1589c4 0%, #0052a4 100%);
 }
 
 .block-container {
-  width: 60%;
   color: #fff;
+  width: 65%;
   font-weight: bold;
 }
 
@@ -39,3 +39,11 @@ main#main-content {
   bottom: 0;
   right: 0;
 }
+
+/* .gyb-container {
+  position: absolute;
+  top: 82vh;
+  left: 0;
+  min-height: 400px;
+  background-color: var(--brand-gray);
+} */
