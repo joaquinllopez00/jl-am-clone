@@ -10,7 +10,7 @@ export function Nav() {
 
   return (
     <header id="main-header" className="container">
-      <div className="row ">
+      <div className="row">
         <nav className="navbar navbar-expand-lg">
           <a href="/" className="navbar-brand">
             <img

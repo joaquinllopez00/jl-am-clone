@@ -26,6 +26,10 @@
   animation: fadeIn 1s ease-out 0s;
 }
 
+.block-container p {
+  color: #fff;
+}
+
 .block-container button {
   margin-top: 1rem;
   color: var(--brand-blue);
@@ -40,10 +44,35 @@
   right: 0;
 }
 
-/* .gyb-container {
-  position: absolute;
-  top: 82vh;
-  left: 0;
+.gyb-container {
   min-height: 400px;
   background-color: var(--brand-gray);
-} */
+  padding: 80px 30px;
+}
+
+.block-columns {
+}
+
+.block-col {
+  width: 48%;
+}
+
+@media screen and (max-width: 992px) {
+  .block-col h2 {
+    font-size: 2.5rem !important;
+  }
+
+  .block-col p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .block-columns {
+    flex-direction: column !important;
+  }
+
+  .block-col {
+    width: 100% !important;
+  }
+}
