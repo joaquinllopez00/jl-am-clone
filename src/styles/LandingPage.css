@@ -1,11 +1,35 @@
 main#main-content {
+  padding-top: 179px;
   min-height: 80vh;
   min-width: 100vw;
+  padding-bottom: 80px;
   /* position: relative; */
 }
 
 #lp-hero.container-fluid {
   background: linear-gradient(180deg, #1589c4 0%, #0052a4 100%);
+}
+
+.block-container {
+  width: 60%;
+  color: #fff;
+  font-weight: bold;
+}
+
+.block-container h1 {
+  color: #fff;
+  font-size: 4.6875rem;
+  font-weight: bold;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  animation: fadeIn 1s ease-out 0s;
+}
+
+.block-container button {
+  margin-top: 1rem;
+  color: var(--brand-blue);
+  font-weight: 500;
 }
 
 .lp-head {
