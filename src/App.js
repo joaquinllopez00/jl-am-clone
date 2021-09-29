@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Login } from "./Components/Login";
+import { Nav } from "./Components/Nav";
+import { LandingPage } from "./Pages/LandingPage";
+import "./App.css";
 function App() {
+  const [validated, setValidated] = useState(false);
+
+  useEffect(() => {
+    let val = window.localStorage.getItem("jlamclone");
+    val && setValidated(true);
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route path="/">
+            {validated ? (
+              <>
+                <Nav />
+                <LandingPage />
+              </>
+            ) : (
+              <Login validated={validated} setValidated={setValidated} />
+            )}
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

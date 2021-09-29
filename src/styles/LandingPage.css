@@ -1,0 +1,17 @@
+main#main-content {
+  min-height: 80vh;
+  min-width: 100vw;
+  /* position: relative; */
+}
+
+#lp-hero.container-fluid {
+  background: linear-gradient(180deg, #1589c4 0%, #0052a4 100%);
+}
+
+.lp-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

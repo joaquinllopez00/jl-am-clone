@@ -1,0 +1,162 @@
+.navbar-brand {
+  max-width: 14.25rem;
+  font-size: 1.125rem;
+}
+
+#main-header {
+  position: absolute;
+  z-index: 99999999;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+}
+
+#main-header nav.navbar {
+  width: 100%;
+  justify-content: space-between;
+}
+
+#main-header nav.navbar a {
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.nav-container .dropdown > button {
+  background-color: transparent !important;
+  border: none;
+  font-size: 1.125rem;
+  font-weight: 400 !important;
+  padding: 0rem;
+  position: relative;
+}
+
+.m-nav .nav-container .dropdown > button::after {
+}
+
+.nav-container a {
+  outline: none;
+  text-decoration: none;
+}
+
+.menu-option,
+.nav-item {
+  text-decoration: none;
+  outline: none;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.nav-item a > svg {
+  font-size: 1.425rem;
+}
+
+#dropdown-basic {
+  font-weight: bold !important;
+}
+
+#dropdown-basic:focus {
+  box-shadow: none !important;
+}
+
+.dropdown a {
+  color: var(--brand-light-blue) !important;
+  font-weight: 400;
+}
+
+.social {
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+}
+
+.offscreen-nav {
+  display: block;
+  min-height: 100vh;
+  position: fixed;
+  padding: 100px 50px 50px;
+  right: -20%;
+  z-index: 9999;
+  min-width: 300px;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--brand-blue);
+  top: -100%;
+}
+
+.visible {
+  top: -15%;
+  right: -20%;
+  bottom: 0;
+}
+
+.navbar-toggler {
+  position: relative;
+  width: 50px;
+  max-width: 50px;
+  outline: none;
+  z-index: 9999999;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler::before,
+.navbar-toggler::after {
+  content: " ";
+  width: 100%;
+  background: #fff;
+  height: 2px;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+button.toggled::before {
+  transform: translate(0, 6px) rotate(-45deg);
+}
+button.toggled::after {
+  transform: translate(0, -8px) rotate(45deg);
+}
+
+.navbar-lines {
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  margin: 5px 0;
+  display: block;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-lines.toggled {
+  opacity: 0;
+}
+
+.m-nav-connect {
+}
+
+.m-nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+
+.m-nav li {
+  list-style: none;
+}
+
+.m-nav .menu-option {
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  padding: 0.5rem 0rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .nav-desktop {
+    display: none;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
