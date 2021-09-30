@@ -133,3 +133,24 @@
     position: relative;
   }
 }
+
+/* about us */
+.au-container {
+  padding: 80px 30px;
+  background-image: linear-gradient(180deg, #1589c4 0%, #0052a4 100%);
+}
+
+.au-container h2,
+.au-container p {
+  color: #fff !important;
+}
+
+.au-container button {
+  color: var(--brand-blue);
+}
+
+@media screen and (max-width: 768px) {
+  .block-col:not(:first-child) {
+    margin-left: 2rem;
+  }
+}

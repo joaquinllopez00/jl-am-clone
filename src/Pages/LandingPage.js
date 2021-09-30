@@ -3,7 +3,7 @@ import "../styles/LandingPage.css";
 import { LandingHero } from "../Components/LandingHero";
 import { GotYourBack } from "../Components/GotYourBack";
 import { Mortgage } from "../Components/Mortgage";
-
+import { AboutUs } from "../Components/AboutUs";
 export function LandingPage() {
   return (
     <>
@@ -13,6 +13,7 @@ export function LandingPage() {
         <LandingHero />
         <GotYourBack />
         <Mortgage />
+        <AboutUs />
       </main>
     </>
   );
