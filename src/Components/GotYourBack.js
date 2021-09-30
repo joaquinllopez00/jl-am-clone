@@ -12,7 +12,7 @@ export function GotYourBack() {
               secure your mortgage, our loan officers are ready to help guide you along the way.
             </p>
           </div>
-          <div className="block-col  d-flex justify-content-end align-items-center">
+          <div className="block-col d-flex justify-content-end align-items-center">
             <p>
               <a href="https://www.approvedmortgage.com?wvideo=cw6xwg5313">
                 <img

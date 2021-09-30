@@ -83,8 +83,9 @@
 }
 
 .visible {
+  position: fixed;
   top: -15%;
-  right: -20%;
+  right: 0%;
   bottom: 0;
 }
 

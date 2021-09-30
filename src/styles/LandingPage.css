@@ -28,6 +28,11 @@
 
 .block-container p {
   color: #fff;
+  font-weight: 600 !important;
+}
+
+.block-col p {
+  font-weight: 500 !important;
 }
 
 .block-container button {
@@ -51,6 +56,7 @@
 }
 
 .block-columns {
+  margin-bottom: 1.75em;
 }
 
 .block-col {
@@ -74,5 +80,56 @@
 
   .block-col {
     width: 100% !important;
+  }
+}
+
+/* mortgage */
+.m-section {
+  margin: 0 auto;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.m-section .active {
+  background-color: var(--brand-blue) !important;
+}
+
+.m-section .btn-outline-primary:not(.active) {
+  color: var(--brand-blue) !important;
+}
+
+.m-section .btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: var(--brand-light-blue);
+}
+
+.m-section section .content {
+  padding: 40px 0px;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.btn-outline-primary:hover {
+  color: var(--brand-blue);
+}
+
+@media screen and (max-width: 1200px) {
+  .m-section .btn-group {
+    width: 65% !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .m-section .btn-group {
+    width: 75% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .m-section .col-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+    position: relative;
   }
 }
