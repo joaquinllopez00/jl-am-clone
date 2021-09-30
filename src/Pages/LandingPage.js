@@ -4,6 +4,7 @@ import { LandingHero } from "../Components/LandingHero";
 import { GotYourBack } from "../Components/GotYourBack";
 import { Mortgage } from "../Components/Mortgage";
 import { AboutUs } from "../Components/AboutUs";
+import { Reviews } from "../Components/Reviews";
 export function LandingPage() {
   return (
     <>
@@ -14,6 +15,7 @@ export function LandingPage() {
         <GotYourBack />
         <Mortgage />
         <AboutUs />
+        <Reviews />
       </main>
     </>
   );
