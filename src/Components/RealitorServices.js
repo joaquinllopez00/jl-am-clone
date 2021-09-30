@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-bootstrap";
+
 import FadeIn from "react-fade-in";
 export function RealitorServices() {
   return (
