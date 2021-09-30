@@ -73,7 +73,7 @@
   min-height: 100vh;
   position: fixed;
   padding: 100px 50px 50px;
-  right: -20%;
+  right: 0%;
   z-index: 9999;
   min-width: 300px;
   visibility: hidden;
