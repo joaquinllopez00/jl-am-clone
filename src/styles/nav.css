@@ -137,7 +137,8 @@ button.toggled::after {
 .m-nav-connect {
 }
 
-.m-nav ul {
+.m-nav ul,
+footer ul {
   display: flex;
   flex-direction: row;
   margin-bottom: 0.5rem;

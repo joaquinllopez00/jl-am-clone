@@ -4,6 +4,7 @@ import { Login } from "./Components/Login";
 import { Nav } from "./Components/Nav";
 import { LandingPage } from "./Pages/LandingPage";
 import "./App.css";
+import { Footer } from "./Components/Footer";
 function App() {
   const [validated, setValidated] = useState(false);
 
@@ -21,6 +22,7 @@ function App() {
               <>
                 <Nav />
                 <LandingPage />
+                <Footer />
               </>
             ) : (
               <Login validated={validated} setValidated={setValidated} />

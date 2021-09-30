@@ -81,7 +81,7 @@ export function Reviews() {
                   return <UserReview r={reviews[key]} key={key} />;
                 })}
           </div>
-          <div className="ap-reviews-more">
+          <div className="ap-reviews-more more">
             <button
               onClick={() => {
                 setRCount(rCount + 3);
