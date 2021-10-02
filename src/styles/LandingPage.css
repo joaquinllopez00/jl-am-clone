@@ -12,8 +12,32 @@
 
 .block-container {
   color: #fff;
-  width: 65%;
+  width: 75%;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .block-container {
+    width: 100%;
+  }
+
+  .block-container h1 {
+    font-size: 4rem !important;
+  }
+
+  .r-text {
+    text-align: center !important;
+  }
+
+  .ap-reviews-container {
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .block-container h1 {
+    font-size: 3rem !important;
+  }
 }
 
 .block-container h1 {
@@ -315,14 +339,38 @@
 #main-footer .col-3 ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 1rem 0rem 3rem 0rem;
 }
 
-#main-footer .col-3 ul li {
-  margin-left: 0.8rem;
+#main-footer .col-3 ul li:not(:last-child) {
+  margin-right: 1rem;
 }
 
 #main-footer .col-3 ul li svg {
   color: #fff;
+}
+
+.copyright p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  #main-footer .locations .col-3 {
+    max-width: 49%;
+    flex: 0 0 49%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #main-footer .col-8 .col-3 {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #fff;
+    width: 85%;
+    flex: 1 0 65%;
+    max-width: 65%;
+  }
 }

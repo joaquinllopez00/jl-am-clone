@@ -10,7 +10,7 @@ export function UserReview(props) {
     return arr;
   };
   return (
-    <div>
+    <div className="r-container">
       <div className="r-header">
         <div className="r-row-pic">
           <img src={r.pPicUrl} alt="Review User"></img>

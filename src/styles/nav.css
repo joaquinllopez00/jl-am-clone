@@ -83,6 +83,12 @@
   top: -100%;
 }
 
+@media screen and (max-width: 500px) {
+  .offscreen-nav {
+    width: 100%;
+  }
+}
+
 .visible {
   position: fixed;
   top: -15%;
@@ -134,11 +140,7 @@ button.toggled::after {
   opacity: 0;
 }
 
-.m-nav-connect {
-}
-
-.m-nav ul,
-footer ul {
+.m-nav ul {
   display: flex;
   flex-direction: row;
   margin-bottom: 0.5rem;
@@ -166,4 +168,6 @@ footer ul {
 img {
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: 9999999;
 }
