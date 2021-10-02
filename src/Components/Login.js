@@ -24,8 +24,8 @@ export function Login(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (pText === "jlamclone") {
-      window.localStorage.setItem("jlamclone", true);
+    if (pText === process.env.REACT_APP_PASSWORD) {
+      window.localStorage.setItem(process.env.REACT_APP_PASSWORD, true);
       return setValidated(true);
     }
     setInvalid("invalid");

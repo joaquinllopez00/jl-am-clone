@@ -21,8 +21,8 @@ export function UserReview(props) {
         </div>
       </div>
       <div className="r-stars">
-        {handleStars(r.stars).map((el) => {
-          return <FontAwesomeIcon icon={faStar} />;
+        {handleStars(r.stars).map((el, idx) => {
+          return <FontAwesomeIcon icon={faStar} key={idx} />;
         })}
       </div>
       <div className="r-text">

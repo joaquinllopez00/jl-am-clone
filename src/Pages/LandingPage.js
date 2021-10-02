@@ -9,8 +9,6 @@ import { BlogPosts } from "../Components/BlogPosts";
 export function LandingPage() {
   return (
     <>
-      {/* <div id="lp-hero" className="container-fluid"></div> */}
-
       <main id="main-content" className="">
         <LandingHero />
         <GotYourBack />

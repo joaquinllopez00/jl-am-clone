@@ -7,7 +7,7 @@ export function MobileNav() {
     <div className="m-nav ">
       <div className="nav-container d-flex flex-column justify-content-center align-items-center m-nav-connect">
         <ConnectTags number={false} />
-        <li class="nav-item phone">
+        <li className="nav-item phone">
           <a href="tel:+13178822255" rel="noreferrer" target="_blank">
             (317) 882-2255
           </a>

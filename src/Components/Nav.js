@@ -18,7 +18,7 @@ export function Nav() {
               height="164px"
               alt="Approved Mortgage Logo in white"
               loading="lazy"
-              class="attachment-full size-full lazyloaded"
+              className="attachment-full size-full lazyloaded"
               src="https://www.approvedmortgage.com/wp-content/uploads/2020/07/amc-logo-light.png"
             />
           </a>

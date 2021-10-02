@@ -30,9 +30,6 @@
   position: relative;
 }
 
-.m-nav .nav-container .dropdown > button::after {
-}
-
 .nav-container a {
   outline: none;
   text-decoration: none;
@@ -162,6 +159,10 @@ button.toggled::after {
 @media screen and (max-width: 1100px) {
   .nav-desktop {
     display: none;
+  }
+
+  .navbar-toggler {
+    display: block !important;
   }
 }
 

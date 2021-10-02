@@ -15,42 +15,42 @@ export function MortgageCalc() {
           <div className="col-6">
             <form onsubmit="return calculateMortgagePayment(event)">
               <label for="home-price">Home Price</label>
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">$</span>
+              <div className="input-group mb-3">
+                <div className="input-group-prepend">
+                  <span className="input-group-text">$</span>
                 </div>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="home-price"
                   aria-label="Home Price (to the nearest dollar)"
                   required
                 />
-                <div class="input-group-append">
-                  <span class="input-group-text">.00</span>
+                <div className="input-group-append">
+                  <span className="input-group-text">.00</span>
                 </div>
               </div>
 
               <label for="down-payment">Down Payment</label>
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">$</span>
+              <div className="input-group mb-3">
+                <div className="input-group-prepend">
+                  <span className="input-group-text">$</span>
                 </div>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="down-payment"
                   aria-label="Down payment (to the nearest dollar)"
                   required
                 />
-                <div class="input-group-append">
-                  <span class="input-group-text">.00</span>
+                <div className="input-group-append">
+                  <span className="input-group-text">.00</span>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div className="form-group">
                 <label for="loan-term">Loan Term</label>
-                <select class="form-control" id="loan-term">
+                <select className="form-control" id="loan-term">
                   <option value="360">30 Year</option>
                   <option value="240">20 Year</option>
                   <option value="180">15 Year</option>
@@ -60,35 +60,41 @@ export function MortgageCalc() {
               </div>
 
               <label for="rate">Interest Rate</label>
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" id="rate" aria-label="Interest rate in percentage" required />
-                <div class="input-group-append">
-                  <span class="input-group-text">%</span>
+              <div className="input-group mb-3">
+                <input
+                  type="text"
+                  className="form-control"
+                  id="rate"
+                  aria-label="Interest rate in percentage"
+                  required
+                />
+                <div className="input-group-append">
+                  <span className="input-group-text">%</span>
                 </div>
               </div>
 
               <label for="tax">Property Tax Percentage</label>
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" id="tax" aria-label="Property Tax in percentage" required />
-                <div class="input-group-append">
-                  <span class="input-group-text">%</span>
+              <div className="input-group mb-3">
+                <input type="text" className="form-control" id="tax" aria-label="Property Tax in percentage" required />
+                <div className="input-group-append">
+                  <span className="input-group-text">%</span>
                 </div>
               </div>
 
               <label for="insurance">Yearly Insurance</label>
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">$</span>
+              <div className="input-group mb-3">
+                <div className="input-group-prepend">
+                  <span className="input-group-text">$</span>
                 </div>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="insurance"
                   aria-label="Insurance (to the nearest dollar)"
                   required
                 />
-                <div class="input-group-append">
-                  <span class="input-group-text">.00</span>
+                <div className="input-group-append">
+                  <span className="input-group-text">.00</span>
                 </div>
               </div>
 

@@ -29,7 +29,7 @@ const blogData = {
 };
 
 export function BlogPosts() {
-  const [bPosts, setBPosts] = useState(blogData);
+  const [bPosts] = useState(blogData);
 
   return (
     <div className="bp container-fluid">
@@ -41,7 +41,7 @@ export function BlogPosts() {
         </p>
         <div className="card-group">
           {Object.keys(bPosts).map((key) => {
-            return <Card context={bPosts[key]} />;
+            return <Card context={bPosts[key]} key={key} />;
           })}
         </div>
         <div className="bp-more more bp-btn">

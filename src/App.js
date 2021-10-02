@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Login } from "./Components/Login";
 import { Nav } from "./Components/Nav";
 import { LandingPage } from "./Pages/LandingPage";
@@ -9,7 +9,8 @@ function App() {
   const [validated, setValidated] = useState(false);
 
   useEffect(() => {
-    let val = window.localStorage.getItem("jlamclone");
+    console.log(process.env.REACT_APP_PASSWORD);
+    let val = window.localStorage.getItem(process.env.REACT_APP_PASSWORD);
     val && setValidated(true);
   }, []);
 
