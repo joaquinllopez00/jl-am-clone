@@ -32,11 +32,19 @@
   .ap-reviews-container {
     margin-right: 0 !important;
   }
+
+  .m-section .btn-group label {
+    font-size: 0.75rem !important;
+  }
 }
 
 @media screen and (max-width: 568px) {
   .block-container h1 {
-    font-size: 3rem !important;
+    font-size: 2.8rem !important;
+  }
+
+  .m-section .btn-group {
+    width: auto !important;
   }
 }
 
@@ -151,7 +159,7 @@
 
 @media screen and (max-width: 992px) {
   .m-section .btn-group {
-    width: 75% !important;
+    width: 90% !important;
   }
 }
 
